@@ -27,6 +27,7 @@
 #ifndef FTMISC_H_
 #define FTMISC_H_
 
+#include <stdint.h>
 
   /* memset */
 #include FT_CONFIG_STANDARD_LIBRARY_H
@@ -42,9 +43,9 @@
   typedef unsigned char  FT_Byte;
   typedef signed int     FT_Int;
   typedef unsigned int   FT_UInt;
-  typedef signed long    FT_Long;
-  typedef unsigned long  FT_ULong;
-  typedef signed long    FT_F26Dot6;
+  typedef intptr_t       FT_Long;
+  typedef uintptr_t      FT_ULong;
+  typedef intptr_t       FT_F26Dot6;
   typedef int            FT_Error;
 
 

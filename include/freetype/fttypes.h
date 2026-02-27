@@ -25,6 +25,7 @@
 #include <freetype/ftsystem.h>
 #include <freetype/ftimage.h>
 
+#include <stdint.h>
 #include <stddef.h>
 
 
@@ -242,7 +243,7 @@ FT_BEGIN_HEADER
    * @description:
    *   A typedef for signed long.
    */
-  typedef signed long  FT_Long;
+  typedef intptr_t  FT_Long;
 
 
   /**************************************************************************
@@ -253,7 +254,7 @@ FT_BEGIN_HEADER
    * @description:
    *   A typedef for unsigned long.
    */
-  typedef unsigned long  FT_ULong;
+  typedef uintptr_t  FT_ULong;
 
 
   /**************************************************************************
@@ -275,7 +276,7 @@ FT_BEGIN_HEADER
    * @description:
    *   A signed 26.6 fixed-point type used for vectorial pixel coordinates.
    */
-  typedef signed long  FT_F26Dot6;
+  typedef intptr_t  FT_F26Dot6;
 
 
   /**************************************************************************
@@ -287,7 +288,7 @@ FT_BEGIN_HEADER
    *   This type is used to store 16.16 fixed-point values, like scaling
    *   values or matrix coefficients.
    */
-  typedef signed long  FT_Fixed;
+  typedef intptr_t  FT_Fixed;
 
 
   /**************************************************************************
