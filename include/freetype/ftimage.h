@@ -55,7 +55,7 @@ FT_BEGIN_HEADER
    *   the context, these can represent distances in integer font units, or
    *   16.16, or 26.6 fixed-point pixel coordinates.
    */
-  typedef intptr_t  FT_Pos;
+  typedef int64_t  FT_Pos;
 
 
   /**************************************************************************

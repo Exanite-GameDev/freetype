@@ -43,9 +43,9 @@
   typedef unsigned char  FT_Byte;
   typedef signed int     FT_Int;
   typedef unsigned int   FT_UInt;
-  typedef intptr_t       FT_Long;
-  typedef uintptr_t      FT_ULong;
-  typedef intptr_t       FT_F26Dot6;
+  typedef int64_t       FT_Long;
+  typedef uint64_t      FT_ULong;
+  typedef int64_t       FT_F26Dot6;
   typedef int            FT_Error;
 
 
